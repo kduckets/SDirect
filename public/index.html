@@ -85,7 +85,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2">
-                        <h1 class="brand-heading">Strings.Direct</h1>
+                        <h1 class="brand-heading">Strings(Direct)</h1>
                         <p class="intro-text">Strings to your door.
                             <br>For sure.</p>
                             <p><button type="button" class="btn btn-info btn-lg">Order Strings Now</button></p>
@@ -173,29 +173,6 @@
  // Fixes undefined module function in SystemJS bundle
  function module() {}
  </script>
-
- <!-- shims:js -->
- <!-- endinject -->
-
- <% if (BUILD_TYPE === 'dev') { %>
- <script src="<%= APP_BASE %>app/system-config.js"></script>
- <% } %>
-
- <!-- libs:js -->
- <!-- endinject -->
-
- <!-- inject:js -->
- <!-- endinject -->
-
- <% if (BUILD_TYPE === 'dev') { %>
- <script>
- System.import('<%= BOOTSTRAP_MODULE %>')
-   .catch(function (e) {
-     console.error(e.stack || e,
-       'Not expecting this error? Report it at https://github.com/mgechev/angular-seed/issues');
-   });
- </script>
- <% } %>
 
 </body>
 
