@@ -8,6 +8,7 @@ body {
   text-align: center;
   font-size:60px;
   font-weight: 200;
+  font-family: "Lora", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 video {
     position: fixed;
@@ -105,22 +106,7 @@ h1 {
   margin-top: 0;
   letter-spacing: .3rem;
 }
-button {
-  display: block;
-  width: 80%;
-  padding: .4rem;
-  border: none;
-  margin: 1rem auto;
-  font-size: 1.3rem;
-  background: rgba(255,255,255,0.23);
-  color: #fff;
-  border-radius: 3px;
-  cursor: pointer;
-  transition: .3s background;
-}
-button:hover {
-   background: rgba(0,0,0,0.5);
-}
+
 
 a {
   display: inline-block;
@@ -136,7 +122,49 @@ a:hover{
 @media screen and (max-width: 500px) {
   div{width:70%;}
 }
-@media screen and (max-device-width: 800px) {
-  html { background: url(https://thenewcode.com/assets/images/polina.jpg) #000 no-repeat center center fixed; }
-  #bgvid { display: none; }
+
+.btn {
+  cursor: pointer;
+  display: block;
+  font-size: 60px;
+  margin: 2 auto 2em;
+  max-width: 560px;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  vertical-align: middle;
+  width: 100%;
+}
+.btn:hover {
+  text-decoration: none;
+}
+
+.btn-4 {
+  border: 1px solid;
+  overflow: hidden;
+  position: relative;
+}
+.btn-4 span {
+  z-index: 20;
+}
+.btn-4:after {
+  background: #fff;
+  content: "";
+  height: 155px;
+  left: -75px;
+  opacity: .2;
+  position: absolute;
+  top: -50px;
+  -webkit-transform: rotate(35deg);
+          transform: rotate(35deg);
+  -webkit-transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+  width: 50px;
+  z-index: -10;
+}
+
+.btn-4:hover:after {
+  left: 120%;
+  -webkit-transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
 }
