@@ -1,7 +1,9 @@
 body {
   margin: 0;
   background: #000;
-  font-family: "Lora", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-image: url("/img/intro-bg.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
   color: white;
   text-align: center;
   font-size:60px;
@@ -23,7 +25,6 @@ video {
 .stopfade {
    opacity: .5;
 }
-
 :root {
     --bg: #3C465C;
     --primary: #78FFCD;
