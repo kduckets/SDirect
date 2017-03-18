@@ -1065,14 +1065,14 @@ color: #ECEBEB;
 			padding-top: 50px;
 			padding-bottom: 50px;
 			color: #f8f8f8;
-		    background-image: url(/img/intro-bg);
+		    background-image: url(/img/intro-bg.jpg);
 			background-size: cover;
 			text-align: center;
 			background-color: #34495e;
 		}
 
 		h1, .h1 {
-			font-size: 32px !important;
+			font-size: 42px !important;
 		}
 
 		h3, .h3 {
