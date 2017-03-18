@@ -1072,11 +1072,11 @@ color: #ECEBEB;
 		}
 
 		h1, .h1 {
-			font-size: 32px;
+			font-size: 32px !important;
 		}
 
 		h3, .h3 {
-			font-size: 16px;
+			font-size: 16px !important;
 		}
 		#gallery1{display:none}
 
