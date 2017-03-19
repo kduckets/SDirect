@@ -7,7 +7,6 @@
 <!--[if gt IE 9]><!--> <html> <!--<![endif]-->
 <head>
    <meta charset="utf-8">
-   <base href="/">
    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
    <meta name="description" content="Quality strings to your door from Restring Club. ">
    <meta name="author" content="">
@@ -26,9 +25,9 @@
    <link href="css/general.css" rel="stylesheet">
 
   <!-- Owl-Carousel -->
- <link href="css/custom.css" rel="stylesheet">
+   <link href="css/custom.css" rel="stylesheet">
  <link href="css/owl.carousel.css" rel="stylesheet">
- <link href="css/owl.theme.css" rel="stylesheet">
+   <link href="css/owl.theme.css" rel="stylesheet">
  <link href="css/style.css" rel="stylesheet">
  <link href="css/animate.css" rel="stylesheet">
 
@@ -36,17 +35,16 @@
  <link rel="stylesheet" href="css/magnific-popup.css">
 
  <script src="js/modernizr-2.8.3.min.js"></script>  <!-- Modernizr /-->
+ <!--[if IE 9]>
+   <script src="js/PIE_IE9.js"></script>
+ <![endif]-->
+ <!--[if lt IE 9]>
+   <script src="js/PIE_IE678.js"></script>
+ <![endif]-->
 
- <!-- Polyfill(s) for older browsers -->
- <script src="node_modules/core-js/client/shim.min.js"></script>
-
- <script src="node_modules/zone.js/dist/zone.js"></script>
- <script src="node_modules/systemjs/dist/system.src.js"></script>
-
- <script src="systemjs.config.js"></script>
- <script>
-   System.import('main.js').catch(function(err){ console.error(err); });
- </script>
+ <!--[if lt IE 9]>
+   <script src="js/html5shiv.js"></script>
+ <![endif]-->
 
 </head>
 
@@ -180,7 +178,8 @@
        <p class="lead" style="margin-top:0">Be one of the first members of the club.</p>
      </div>
 
-     <!-- <form role="form" action="" method="post" >
+
+     <form id="contact-form" role="form" action="" method="post" >
        <div class="col-md-6">
          <div class="form-group">
            <label for="InputName">Your Name</label>
@@ -206,17 +205,19 @@
            </div>
          </div>
 
-         <input type="submit" name="submit" id="submit" value="Submit" class="btn wow tada btn-embossed btn-primary pull-right">
+         <input type="submit" name="submit" id="form-submit" value="Submit" class="btn wow tada btn-embossed btn-primary pull-right">
        </div>
-     </form> -->
-     <my-app>Loading...</my-app>
+     </form>
+     <p id="input-feedback"></p>
+     <iframe src="#" id="no-target" name="no-target" style="visibility:hidden"></iframe>
 
      <hr class="featurette-divider hidden-lg">
        <div class="col-md-5 col-md-push-1 address">
 
+
+
          <h3>Want free strings?</h3>
          <p class="lead">Request early access to the club and get some free strings. No commitment, strings attached.</p>
-
 
          <h3>Social</h3>
          <li class="social">
@@ -229,6 +230,23 @@
      </div>
    </div>
  </div>
+
+ <!-- <script>
+    $('#contact-form').one('submit',function(){
+        var inputq1 = encodeURIComponent($('#InputName').val());
+        var inputq2 = encodeURIComponent($('#InputEmail').val());
+        var inputq3 = encodeURIComponent($('#InputMessage').val());
+        var q1ID = "entry.2005620554";
+        var q2ID = "entry.1045781291";
+        var q3ID = "entry.839337160";
+        var baseURL = 'https://docs.google.com/forms/d/e/1FAIpQLScXITKY3unI3jf7n8BO0qUDrRPJqGFC6oIK5H5vOgjm1Dzo5A/formResponse?';
+        var submitRef = '&submit=Submit';
+        var submitURL = (baseURL + q1ID + "=" + inputq1 + "&" + q2ID + "=" + inputq2 + "&" + q3ID + "=" + inputq3 + submitRef);
+        console.log(submitURL);
+        $(this)[0].action=submitURL;
+        $('#input-feedback').text('Thank You!');
+    });
+</script> -->
 
 
 
