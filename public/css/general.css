@@ -71,7 +71,7 @@ font-weight: 300;
 }
 
 .phone-image {
-max-width: 250px;
+max-width: 100%;
 margin: auto;
 }
 
@@ -1065,6 +1065,7 @@ color: #ECEBEB;
 	@media only screen and (max-width: 767px) {
 		.intro-header {
 			height: 100%;
+			width:100%;
 			padding-top: 50px;
 			padding-bottom: 50px;
 			color: #f8f8f8;
