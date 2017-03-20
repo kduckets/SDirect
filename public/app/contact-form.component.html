@@ -3,7 +3,7 @@
     <h2>Request Early Access</h2>
     <p class="lead" style="margin-top:0">Be one of the first members of the club.</p>
   </div>
-<form (ngSubmit)="onSubmit()" role="form" action="" method="post" >
+<form (ngSubmit)="onSubmit()" role="form" action="" method="post" #contactForm="ngForm">
   <div class="col-md-6">
     <div class="form-group">
       <label for="InputName">Your Name</label>
@@ -29,25 +29,25 @@
       </div>
     </div>
 
-    <input type="submit" name="submit" id="submit" value="Submit" class="btn wow tada btn-embossed btn-primary pull-right">
+    <input type="submit" name="submit" id="submit" value="Submit" [disabled]="!contactForm.form.valid" class="btn wow tada btn-embossed btn-primary pull-right">
   </div>
 </form>
 </div>
 <div [hidden]="!submitted">
   <div class="col-md-6 col-md-offset-3 text-center wrap_title">
     <h2>Thanks!</h2>
-    <p class="lead" style="margin-top:0">We'll keep you updated on that free pack of strings. Stay tuned!</p>
+    <p class="lead" style="margin-top:0">We'll be sure to keep you in the loop. Stay tuned!</p>
   </div>
 </div>
 <hr class="featurette-divider hidden-lg">
   <div class="col-md-5 col-md-push-1 address">
 
-    <h3>Want free strings?</h3>
-    <p class="lead">Request early access to the club and get some free strings along with other early member exclusive benefits. No commitment, strings attached.</p>
-    <h3>Social</h3>
+    <h3>Be in the know.</h3>
+    <p class="lead">Request early access to the club and get updates along with early member benefits. No string attached.</p>
+    <h3>Be Social</h3>
     <li class="social">
     <a href="#"><i class="fa fa-facebook-square fa-size" style="color:white"> </i></a>
-    <a href="#"><i class="fa  fa-twitter-square fa-size" style="color:white"> </i> </a>
-    <a href="#"><i class="fa fa-google-plus-square fa-size" style="color:white"> </i></a>
-    <a href="#"><i class="fa fa-flickr fa-size" style="color:white"> </i> </a>
+    <a href="#"><i class="fa fa-twitter-square fa-size" style="color:white"> </i> </a>
+    <a href="#"><i class="fa fa-instagram fa-size" style="color:white"> </i></a>
+    <!-- <a href="#"><i class="fa fa-flickr fa-size" style="color:white"> </i> </a> -->
     </li>
