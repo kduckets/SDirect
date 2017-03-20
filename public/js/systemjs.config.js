@@ -13,7 +13,7 @@ var isPublic = typeof window != "undefined";
     // map tells the System loader where to look for things
     map: {
       // our app is within the app folder
-      app: (isPublic) ? '' : 'app',
+      app: (isPublic) ? '' : './public/app',
       // angular bundles
       '@angular/core': 'npm:@angular/core/bundles/core.umd.js',
       '@angular/common': 'npm:@angular/common/bundles/common.umd.js',
@@ -24,6 +24,8 @@ var isPublic = typeof window != "undefined";
       '@angular/router': 'npm:@angular/router/bundles/router.umd.js',
       '@angular/forms': 'npm:@angular/forms/bundles/forms.umd.js',
       '@angular/upgrade': 'npm:@angular/upgrade/bundles/upgrade.umd.js',
+      'angularfire2': 'npm:angularfire2',
+      'firebase':'npm:firebase',
       // other libraries
       'rxjs':                      'npm:rxjs',
       'angular-in-memory-web-api': 'npm:angular-in-memory-web-api/bundles/in-memory-web-api.umd.js'
@@ -36,6 +38,12 @@ var isPublic = typeof window != "undefined";
       },
       rxjs: {
         defaultExtension: 'js'
+      },
+      angularfire2: {
+        main: 'angularfire2.js'
+      },
+      firebase: {
+        main: 'firebase.js'
       }
     }
   });

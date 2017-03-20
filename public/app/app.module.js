@@ -5,13 +5,21 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var platform_browser_1 = require("@angular/platform-browser");
+var forms_1 = require("@angular/forms");
 var http_1 = require("@angular/http");
+var angularfire2_1 = require("angularfire2");
 var app_component_1 = require("./app.component");
-var about_component_1 = require("./components/about/about.component");
-var routes_1 = require("./routes");
-var home_component_1 = require("./components/home/home.component");
+var contact_form_component_1 = require("./contact-form.component");
+exports.firebaseConfig = {
+    apiKey: "AIzaSyDGoqUEVQOZSAd8WBmfySF2fkAeRJ_R2Ds",
+    authDomain: "strings-direct.firebaseapp.com",
+    databaseURL: "https://strings-direct.firebaseio.com",
+    storageBucket: "strings-direct.appspot.com",
+    messagingSenderId: "760983332161"
+};
 var AppModule = (function () {
     function AppModule() {
     }
@@ -21,14 +29,14 @@ AppModule = __decorate([
     core_1.NgModule({
         imports: [
             platform_browser_1.BrowserModule,
+            forms_1.FormsModule,
             http_1.HttpModule,
-            http_1.JsonpModule,
-            routes_1.routing
+            angularfire2_1.AngularFireModule.initializeApp(exports.firebaseConfig),
+            http_1.JsonpModule
         ],
         declarations: [
             app_component_1.AppComponent,
-            about_component_1.AboutComponent,
-            home_component_1.HomeComponent
+            contact_form_component_1.ContactFormComponent
         ],
         bootstrap: [app_component_1.AppComponent]
     })

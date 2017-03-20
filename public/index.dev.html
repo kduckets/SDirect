@@ -1,10 +1,5 @@
-<!-- FlatFy Theme - Andrea Galanti /-->
 <!doctype html>
-<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
-<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
-<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
-<!--[if IE 9]>    <html class="no-js ie9" lang="en"> <![endif]-->
-<!--[if gt IE 9]><!--> <html> <!--<![endif]-->
+<html>
 <head>
    <meta charset="utf-8">
    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
@@ -17,17 +12,17 @@
    <link href="css/bootstrap.min.css" rel="stylesheet">
 
    <!-- Custom Google Web Font -->
-   <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
-   <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+ <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+ <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
  <link href='http://fonts.googleapis.com/css?family=Arvo:400,700' rel='stylesheet' type='text/css'>
 
    <!-- Custom CSS-->
-   <link href="css/general.css" rel="stylesheet">
+ <link href="css/general.css" rel="stylesheet">
 
   <!-- Owl-Carousel -->
-   <link href="css/custom.css" rel="stylesheet">
+ <link href="css/custom.css" rel="stylesheet">
  <link href="css/owl.carousel.css" rel="stylesheet">
-   <link href="css/owl.theme.css" rel="stylesheet">
+ <link href="css/owl.theme.css" rel="stylesheet">
  <link href="css/style.css" rel="stylesheet">
  <link href="css/animate.css" rel="stylesheet">
 
@@ -35,16 +30,13 @@
  <link rel="stylesheet" href="css/magnific-popup.css">
 
  <script src="js/modernizr-2.8.3.min.js"></script>  <!-- Modernizr /-->
- <!--[if IE 9]>
-   <script src="js/PIE_IE9.js"></script>
- <![endif]-->
- <!--[if lt IE 9]>
-   <script src="js/PIE_IE678.js"></script>
- <![endif]-->
 
- <!--[if lt IE 9]>
-   <script src="js/html5shiv.js"></script>
- <![endif]-->
+ <base href="/">
+
+ <!-- Polyfill(s) for older browsers -->
+  <script src="js/vendor/shim.min.js"></script>
+  <script src="js/vendor/zone.min.js"></script>
+  <script src="js/vendor/Reflect.js"></script>
 
 </head>
 
@@ -167,7 +159,7 @@
    </div>
 
 
-
+<my-app>Loading..</my-app>
  <!-- Contact -->
  <div id="contact" class="content-section-a" style="background:url(/img/wood.jpg) center center; color:white">
    <div class="container">
@@ -231,28 +223,12 @@
    </div>
  </div>
 
- <!-- <script>
-    $('#contact-form').one('submit',function(){
-        var inputq1 = encodeURIComponent($('#InputName').val());
-        var inputq2 = encodeURIComponent($('#InputEmail').val());
-        var inputq3 = encodeURIComponent($('#InputMessage').val());
-        var q1ID = "entry.2005620554";
-        var q2ID = "entry.1045781291";
-        var q3ID = "entry.839337160";
-        var baseURL = 'https://docs.google.com/forms/d/e/1FAIpQLScXITKY3unI3jf7n8BO0qUDrRPJqGFC6oIK5H5vOgjm1Dzo5A/formResponse?';
-        var submitRef = '&submit=Submit';
-        var submitURL = (baseURL + q1ID + "=" + inputq1 + "&" + q2ID + "=" + inputq2 + "&" + q3ID + "=" + inputq3 + submitRef);
-        console.log(submitURL);
-        $(this)[0].action=submitURL;
-        $('#input-feedback').text('Thank You!');
-    });
-</script> -->
-
 
 
    <!-- JavaScript -->
-   <script src="js/jquery-1.10.2.js"></script>
-   <script src="js/bootstrap.js"></script>
+ <script src="js/bundle.min.js"></script>
+ <script src="js/jquery-1.10.2.js"></script>
+ <script src="js/bootstrap.js"></script>
  <script src="js/owl.carousel.js"></script>
  <script src="js/script.js"></script>
  <!-- StikyMenu -->
