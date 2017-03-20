@@ -220,18 +220,18 @@ background: #1abc9c !important;
 }
 
 .navbar-default .navbar-nav>li>a {
-color: #ffffff;
+color: #1abc9c !important;
 }
 
 .navbar-default .navbar-nav>li>a:hover {
-color: #ECEBEB;
+color: #ffffff !important;
 }
 
 .navbar-default .navbar-brand {
-color: #ffffff;
+color: #1abc9c !important;
 }
 .navbar-default .navbar-brand:hover {
-color: #ECEBEB;
+color: #ffffff !important;
 }
 
 .navbar-brand {
