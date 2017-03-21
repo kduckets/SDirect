@@ -1065,15 +1065,11 @@ color: #A9A9A9 !important;
 /* All Mobile Sizes (devices and browser) */
 	@media only screen and (max-width: 767px) {
 		.intro-header {
-			height: 100%;
 			width:100%;
-			padding-top: 50px;
-			padding-bottom: 50px;
 			color: #f8f8f8;
 		    background-image: url(/img/hat-min.jpg);
 			background-position:center;
 			text-align: center;
-		
 		}
 
 		h1, .h1 {
