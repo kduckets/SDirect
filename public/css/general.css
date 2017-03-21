@@ -1071,9 +1071,9 @@ color: #A9A9A9 !important;
 			padding-bottom: 50px;
 			color: #f8f8f8;
 		    background-image: url(/img/hat-min.jpg);
-			background-size: cover;
+			background-position:center;
 			text-align: center;
-			background-color: #34495e;
+		
 		}
 
 		h1, .h1 {
