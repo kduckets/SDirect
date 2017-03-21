@@ -1068,7 +1068,8 @@ color: #A9A9A9 !important;
 			width:100%;
 			color: #f8f8f8;
 		    background-image: url(/img/hat-min.jpg);
-			background-position:center;
+				background-size: cover;
+			background-position: center center;
 			text-align: center;
 		}
 
