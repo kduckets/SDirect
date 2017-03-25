@@ -75,6 +75,10 @@ max-width: 100%;
 margin: auto;
 }
 
+.splash-logo{
+	width:50%;
+}
+
 .h1_home{
 	font-size: 80px;
 	font-family: arvo;
@@ -1073,12 +1077,16 @@ color: #A9A9A9 !important;
 			text-align: center;
 		}
 
+		.splash-logo{
+			width:80%;
+		}
+
 		h1, .h1 {
 			font-size: 52px !important;
 		}
 
 		h3, .h3 {
-			font-size: 36px !important;
+			font-size: 30px !important;
 		}
 		#gallery1{display:none}
 
