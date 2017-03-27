@@ -255,6 +255,7 @@ color: #A9A9A9 !important;
 	padding-bottom: 50px;
 	color: #f8f8f8;
 	background: url(/img/hat-min.jpg) no-repeat center center;
+	font-family: 'Indie Flower', cursive;
 	background-size: cover;
 	text-align: center;
 }
@@ -271,7 +272,7 @@ color: #A9A9A9 !important;
 .intro-message > h1 {
 	margin: 0;
 	font-size: 5em;
-	font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: 'Indie Flower', cursive;
 	font-weight: 400;
 	letter-spacing: 3px;
 }
@@ -285,7 +286,7 @@ color: #A9A9A9 !important;
 .intro-message > h3 {
 	margin: 0;
 	font-size: 2.8em;
-	font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: 'Indie Flower', cursive;
 	font-weight: 300;
 	letter-spacing: 0px;
 	margin-top: 10px;
